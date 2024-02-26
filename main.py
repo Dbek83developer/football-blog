@@ -30,8 +30,8 @@ This will install the packages from the requirements.txt for this project.
 
 
 app = Flask(__name__)
-# app.secret_key = os.environ.get('FLASK_KEY')
-print(os.environ.get('FLASK_KEY'))
+secret_key = os.environ.get('FLASK_KEY')
+print(secret_key)
 app.config['SECRET_KEY'] = '88dfgjkjewkaas4jklsj74sdbkjd2' # os.environ.get('FLASK_KEY')
 
 
